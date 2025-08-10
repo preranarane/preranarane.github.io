@@ -1,0 +1,90 @@
+
+/* == Typography Polish (add after styles.css & gradient-overrides.css) == */
+
+/* Smooth rendering */
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Comfortable reading width */
+:root {
+  --reading-width: 72ch;
+}
+
+/* Constrain long text blocks for readability */
+.resume-section-content {
+  max-width: var(--reading-width);
+}
+
+/* Paragraph rhythm */
+.resume-section-content p {
+  font-size: clamp(1.02rem, 0.95rem + 0.35vw, 1.15rem);
+  line-height: 1.75;
+  color: #23262a;
+  text-wrap: pretty;
+  margin-bottom: 1.1rem;
+}
+
+/* Balance multi-line headings nicely */
+.resume-section-content h1,
+.resume-section-content h2,
+.resume-section-content h3 {
+  text-wrap: balance;
+  letter-spacing: 0.2px;
+}
+
+/* Subhead / metadata (e.g., job locations, degrees) */
+.subheading {
+  color: #5c6570;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+/* Lists: better spacing + colored markers */
+.resume-section-content ul,
+.resume-section-content ol {
+  padding-left: 1.25rem;
+}
+.resume-section-content li + li {
+  margin-top: 0.4rem;
+}
+.resume-section-content li::marker {
+  color: #6432c0;
+}
+
+/* Publication citations look lighter */
+.citation {
+  font-size: 0.975rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Dates align beautifully (tabular numerals) */
+.text-primary,
+.resume-section-content time,
+.resume-section-content .date {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Nicer link underlines (keeps your brand color) */
+.resume-section-content a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-decoration-skip-ink: auto;
+}
+
+/* Blockquotes for future use */
+.resume-section-content blockquote {
+  padding-left: 1rem;
+  border-left: 4px solid rgba(100, 50, 192, 0.25);
+  color: #444;
+  font-style: italic;
+}
+
+/* Tighten h1 spacing a bit */
+.resume-section-content h1 {
+  margin-bottom: 0.5rem;
+}
