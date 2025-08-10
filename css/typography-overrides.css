@@ -10,7 +10,7 @@ html {
 
 /* Comfortable reading width */
 :root {
-  --reading-width: 72ch;
+  --reading-width: none;
 }
 
 /* Constrain long text blocks for readability */
