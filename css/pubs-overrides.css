@@ -86,3 +86,42 @@
 #publications h3 {
   margin-top: 1.2rem;
 }
+
+/* Research chips: bigger + clearer */
+.research-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  margin: .5rem 0 1.25rem;
+}
+
+.research-chips .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  font-size: 1.05rem;          /* was ~.92rem */
+  font-weight: 600;            /* stronger */
+  background: rgba(100,50,192,.10);
+  border: 1px solid rgba(100,50,192,.22);
+  color: #2c2f36;
+}
+
+.research-chips .chip i {
+  font-size: 1.05rem;          /* larger icon */
+  opacity: .9;
+}
+
+/* Small eyebrow label */
+.research-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-size: .9rem;
+  color: #5c6570;
+  margin-bottom: .35rem;
+}
